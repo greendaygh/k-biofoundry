@@ -1,0 +1,51 @@
+@charset "utf-8";
+/*-------------------------------------------------
+content Style Sheet / myeong-hee park
+-------------------------------------------------*/
+.tow-column {padding: 0 8px; overflow: hidden;}
+.tow-column .bg01 {float: left; width: 53.2%; overflow: hidden;}
+.tow-column [class*="txt-area"] {padding-bottom: 4rem; border-bottom: solid 1px #ddd;}
+.tow-column .txt-area01 {float: right; width: 46%;}
+.tow-column .bg02 {float: right;}
+.tow-column .txt-area02 {float: left; width: 45.7%;}
+.tow-column .subject {margin: 2rem 0 3rem; color: #000; line-height: 1;  font-size: 3rem;}
+.tow-column .desc {line-height: 1.3; font-size: 1.1rem;}
+
+.people-list {color: #555; font-size: 0.9rem; overflow: hidden;}
+.people-list > li {margin-top: 1.25rem; padding: 1.9rem 1.6rem; background-color: #f9f9f9; border: dotted 1px #000; overflow: hidden;}
+.people-list > li:first-child {margin-top: 0;}
+.people-list .pic {display: block; float: left; width: 101px; height: 124px; margin-right: 1.5rem; overflow: hidden; }
+.people-list .info {position: relative; margin-top: 0.8rem; overflow: hidden;}
+.people-list .name {margin-bottom: .5rem; color: #000; line-height: 1; font-size: 1.25rem; font-family: 'Gotham'; font-weight: bold;}
+.people-list .email {margin-top: 0.8rem; }
+
+.socpe-list {padding-top: 3rem; font-size: 1rem;}
+.socpe-list li {margin-top: 1rem;}
+.lstyle-line > li {position: relative; padding-left: 0.8rem;}
+.lstyle-line > li::before {position: absolute; top: 0.65rem; left: 0; width: 6px; height: 1px; background-color: #555; content: '';}
+
+.contactus {margin: 3.5rem auto 3rem; padding-top: 240px; background: url(../images/content/contactus_icon.gif) no-repeat center 0; text-align: center; font-size: 1rem;}
+.contactus a {position: relative; display: inline-block; padding-bottom: 3px;  color: #555; font-weight: 500;}
+.contactus a::after {display: block; width: 100%; height: 1px; background-color: #555; content:'';}
+
+.techologie-area {position: relative; margin: 30px 25px; }
+.techologie-area .subject {position: absolute;top: 50%;left: 50%;display: flex;display: -webkit-flex;flex-direction: row;flex-wrap: wrap;align-items: center;align-content: center;justify-content: center;width: 438px;height: 437px;margin-top: -25px;margin-left: 8px;background: url(../images/content/techologie_bg.gif)  no-repeat center center;transform: translate(-50%, -50%);font-size: 1rem; font-family: 'Montserrat', sans-serif; }
+.techologie-list {position: relative;  overflow: hidden;}
+.techologie-list > li {float: left; width: 50%; overflow: hidden;}
+.techologie-list > li .tit {display: flex; display: -webkit-flex; flex-direction: row; flex-wrap: wrap; align-items: center; align-content: center;  justify-content: center; width: 139px; height: 139px; background-color: #25628c; border-radius: 100%; color: #fff; font-size: 1.25rem; font-family: 'Montserrat', sans-serif; overflow: hidden;}
+.techologie-list .txt {width: calc(100% - 160px); margin-top: 10px; font-size: 0.75rem; overflow: hidden;}
+.techologie-list .txt > li {position: relative; margin-top: 15px; padding-left: 10px; overflow: hidden;}
+.techologie-list .txt > li:first-child {margin-top: 0;}
+.techologie-list .txt > li::before {position: absolute; top: 8px; left: 0; width: 5px; height: 1px; background-color: #767676; content: '';} 
+.techologie-list > li:nth-child(odd) {padding-right: 70px;}
+.techologie-list > li:nth-child(even) {padding-left: 90px;}
+.techologie-list > li:nth-child(odd) .tit {float: right; margin-left: 15px;}
+.techologie-list > li:nth-child(odd) .txt {float: left; text-align: right;}
+.techologie-list > li:nth-child(odd) .txt > li {padding-left: 0;}
+.techologie-list > li:nth-child(odd) .txt > li:before {position: inherit; top: inherit; left: inherit; display: inline-block;  vertical-align: middle;}
+.techologie-list > li:nth-child(even) .tit {float: left; margin-right: 15px;}
+.techologie-list > li:nth-child(even) .txt {float: right;}
+.techologie-list > li:nth-child(-n+2) {margin-bottom: 145px;}
+.techologie-list > li:nth-child(2) .tit {background-color: #258c55;}
+.techologie-list > li:nth-child(3) .tit {background-color: #763f8d;}
+.techologie-list > li:nth-child(4) .tit {background-color: #b37b1a;}
