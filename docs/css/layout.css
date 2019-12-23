@@ -7,7 +7,8 @@ layout Style Sheet / myeong-hee park
 .wrap-con {width: 1200px; margin: 0 auto;}
 #header {position: absolute; top: 2rem; left: 50%; margin-left: -600px;}
 #header .logo {float: left; line-height: 1; font-size: 1.0rem;}
-#gnb-area {position: relative; float: right; font-size:0.9rem; font-family: 'Montserrat', sans-serif; font-weight: bold;}
+/* #gnb-area {position: relative; float: right; font-size:0.9rem; font-family: 'Montserrat', sans-serif; font-weight: bold;} */
+#gnb-area {position: relative; float: right; font-size:0.9rem; font-family: 'Montserrat', sans-serif;}
 #gnb > li {float: left; margin-left: 2.75rem;}
 #gnb > li a {position: relative; display: block; padding-bottom: 4px; color: #fff; }
 /*
