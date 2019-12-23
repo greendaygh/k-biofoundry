@@ -4,7 +4,7 @@ layout Style Sheet / myeong-hee park
 -------------------------------------------------*/
 #wrap {overflow: hidden;}
 /* .logo {color: #fff; font-size: 1.5rem;} */
-.logo {color: #fff; font-size: 1rem;}
+.logo {color: #fff; font-size: 1.0rem;}
 .wrap-con {width: 1200px; margin: 0 auto;}
 #header {position: absolute; top: 2rem; left: 50%; margin-left: -600px;}
 #header .logo {float: left; line-height: 1; font-size: 1.5rem;}
