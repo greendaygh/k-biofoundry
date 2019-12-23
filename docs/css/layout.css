@@ -3,15 +3,20 @@
 layout Style Sheet / myeong-hee park
 -------------------------------------------------*/
 #wrap {overflow: hidden;}
-.logo {color: #fff; font-size: 1.5rem;}
+/* .logo {color: #fff; font-size: 1.5rem;} */
+.logo {color: #fff; font-size: 1rem;}
 .wrap-con {width: 1200px; margin: 0 auto;}
 #header {position: absolute; top: 2rem; left: 50%; margin-left: -600px;}
 #header .logo {float: left; line-height: 1; font-size: 1.5rem;}
 #gnb-area {position: relative; float: right; font-size:0.9rem; font-family: 'Montserrat', sans-serif; font-weight: bold;}
 #gnb > li {float: left; margin-left: 2.75rem;}
 #gnb > li a {position: relative; display: block; padding-bottom: 4px; color: #fff; }
+/*
 #gnb > li.active a, #gnb > li a:hover {color: #80fff8; text-decoration: none; transition: all 0.5s ease;}
 #gnb > li a::after, #gnb > li a:hover::after  {position: absolute; bottom: 0; left: 0; width: 0; height: 4px; background-color: #80fff8; content: ''; opacity: 0; transition: all 0.5s ease;}
+*/
+#gnb > li.active a, #gnb > li a:hover {color: #ffffff; text-decoration: none; transition: all 0.5s ease;}
+#gnb > li a::after, #gnb > li a:hover::after  {position: absolute; bottom: 0; left: 0; width: 0; height: 4px; background-color: #ffffff; content: ''; opacity: 0; transition: all 0.5s ease;}
 #gnb > li a:hover::after,  #gnb > li.active a::after {width: 100%; opacity: 1;}
 
 #body {padding-bottom: 2.5rem; background-color: #f2f2f2;}
@@ -23,7 +28,8 @@ layout Style Sheet / myeong-hee park
 
 #section-subject {display: flex; display: -webkit-flex; height: 435px; flex-flow: row wrap; align-items: center; align-content: center;  justify-content: center; text-align: center; color: #fff;}
 #content {margin-top: -2.5rem; padding: 2.25rem 2rem; background-color: #fff; box-shadow: -2px 2px 10px rgba(0, 0, 0, .1);}
-.section-tit {width: 100%; line-height: 1; font-size: 3.5rem; font-family: 'Montserrat', sans-serif; font-weight: 600;}
+/* .section-tit {width: 100%; line-height: 1; font-size: 3.5rem; font-family: 'Montserrat', sans-serif; font-weight: 600;} */
+.section-tit {width: 100%; line-height: 1; font-size: 2.5rem; font-family: 'Montserrat', sans-serif; font-weight: 600;}
 .section-subtit {margin-top: 2rem; line-height: 1.5; font-size:1.1rem;}
 #footer {padding: 1.5rem 0 1.1rem; background-color: #000; color: rgba(255,255,255,.5);overflow: hidden;}
 .flogo {display: block; float: left; margin-right: 2.5rem;}
