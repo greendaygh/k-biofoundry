@@ -1,0 +1,26 @@
+/* 언어 선택기 스타일 */
+.language-selector {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.language-selector a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.language-selector a.active {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.language-selector a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+} 
