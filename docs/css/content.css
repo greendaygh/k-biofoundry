@@ -2,38 +2,141 @@
 /*-------------------------------------------------
 content Style Sheet / myeong-hee park
 -------------------------------------------------*/
-.tow-column {padding: 0 8px; overflow: hidden;}
-.tow-column .bg01 {float: left; width: 53.2%; overflow: hidden;}
-.tow-column [class*="txt-area"] {padding-bottom: 4rem; border-bottom: solid 1px #ddd;}
-.tow-column .txt-area01 {float: right; width: 46%;}
-.tow-column .bg02 {float: right;}
-.tow-column .txt-area02 {float: left; width: 45.7%;}
+.tow-column {
+    padding: 0 8px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.tow-column .bg01,
+.tow-column .bg02 {
+    width: 100%;
+    max-width: 53.2%;
+}
+
+.tow-column .bg01 img,
+.tow-column .bg02 img {
+    width: 100%;
+    height: auto;
+}
+
+.tow-column [class*="txt-area"] {
+    padding-bottom: 2rem;
+    border-bottom: solid 1px #ddd;
+}
+
+.tow-column .txt-area01,
+.tow-column .txt-area02 {
+    width: 100%;
+    max-width: 46%;
+}
+
 .tow-column .subject {margin: 2rem 0 3rem; color: #000; line-height: 1;  font-size: 2.5rem;}
-.tow-column .desc {line-height: 1.3; font-size: 1.1rem;}
+.tow-column .desc {line-height: 1.3; font-weight: 400; font-size: 1.1rem; color: #000;}
 
 .people-list {color: #555; font-size: 0.9rem; overflow: hidden;}
-.people-list > li {margin-top: 1.25rem; padding: 1.9rem 1.6rem; background-color: #f9f9f9; border: dotted 1px #000; overflow: hidden;}
+.people-list > li {
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    margin-top: 1.25rem;
+    padding: 1.9rem 1.6rem;
+    overflow: hidden;
+}
 .people-list > li:first-child {margin-top: 0;}
+.people-list > li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
 .people-list .pic {display: block; float: left; width: 101px; height: 124px; margin-right: 1.5rem; overflow: hidden; }
 .people-list .info {position: relative; margin-top: 0.8rem; overflow: hidden;}
-.people-list .name {margin-bottom: .5rem; color: #000; line-height: 1; font-size: 1.25rem; font-family: 'Gotham'; font-weight: bold;}
+.people-list .name {margin-bottom: .5rem; color: var(--primary-color); line-height: 1; font-size: 1.25rem; font-family: 'Gotham'; font-weight: 600;}
 .people-list .email {margin-top: 0.8rem; }
+.people-list .pic img {
+    width: 100%;
+    height: auto;
+}
 
 .socpe-list {padding-top: 3rem; font-size: 1rem;}
 .socpe-list li {margin-top: 1rem;}
-.lstyle-line > li {position: relative; padding-left: 0.8rem;}
-.lstyle-line > li::before {position: absolute; top: 0.65rem; left: 0; width: 6px; height: 1px; background-color: #555; content: '';}
+.lstyle-line > li {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.lstyle-line > li::before {
+    background-color: var(--secondary-color);
+    width: 6px;
+    height: 6px;
+    opacity: 0.8;
+}
 
-.contactus {margin: 3.5rem auto 3rem; padding-top: 240px; background: url(../images/content/contactus_icon.gif) no-repeat center 0; text-align: center; font-size: 1rem;}
-.contactus a {position: relative; display: inline-block; padding-bottom: 3px;  color: #555; font-weight: 500;}
+.contactus {
+    margin: 3.5rem auto 3rem;
+    padding-top: 240px;
+    background-image: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    background: none;
+}
+.contactus a {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    transition: all 0.3s ease;
+}
 .contactus a::after {display: block; width: 100%; height: 1px; background-color: #555; content:'';}
+.contactus a:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
 
-.techologie-area {position: relative; margin: 30px 25px; }
+.techologie-area {
+    position: relative;
+    margin: 30px auto;
+    max-width: 800px;
+}
 .techologie-area .subject {position: absolute;top: 50%;left: 50%;display: flex;display: -webkit-flex;flex-direction: row;flex-wrap: wrap;align-items: center;align-content: center;justify-content: center;width: 438px;height: 437px;margin-top: -25px;margin-left: 8px;background: url(../images/content/techologie_bg.gif)  no-repeat center center;transform: translate(-50%, -50%);font-size: 1rem; font-family: 'Montserrat', sans-serif; }
 .techologie-list {position: relative;  overflow: hidden;}
 .techologie-list > li {float: left; width: 50%; overflow: hidden;}
-.techologie-list > li .tit {display: flex; display: -webkit-flex; flex-direction: row; flex-wrap: wrap; align-items: center; align-content: center;  justify-content: center; width: 139px; height: 139px; background-color: #25628c; border-radius: 100%; color: #fff; font-size: 1.25rem; font-family: 'Montserrat', sans-serif; overflow: hidden;}
-.techologie-list .txt {width: calc(100% - 160px); margin-top: 10px; font-size: 0.75rem; overflow: hidden;}
+.techologie-list > li .tit {
+    background: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 139px;
+    height: 139px;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+.techologie-list > li:hover .tit {
+    transform: scale(1.05);
+}
+.techologie-list .txt {
+    color: var(--text-color);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    width: calc(100% - 160px);
+    margin-top: 10px;
+    overflow: hidden;
+}
 .techologie-list .txt > li {position: relative; margin-top: 15px; padding-left: 10px; overflow: hidden;}
 .techologie-list .txt > li:first-child {margin-top: 0;}
 .techologie-list .txt > li::before {position: absolute; top: 8px; left: 0; width: 5px; height: 1px; background-color: #767676; content: '';}
@@ -46,6 +149,370 @@ content Style Sheet / myeong-hee park
 .techologie-list > li:nth-child(even) .tit {float: left; margin-right: 15px;}
 .techologie-list > li:nth-child(even) .txt {float: right;}
 .techologie-list > li:nth-child(-n+2) {margin-bottom: 145px;}
-.techologie-list > li:nth-child(2) .tit {background-color: #258c55;}
-.techologie-list > li:nth-child(3) .tit {background-color: #763f8d;}
-.techologie-list > li:nth-child(4) .tit {background-color: #b37b1a;}
+.techologie-list > li:nth-child(2) .tit {
+    background: var(--secondary-color);
+}
+.techologie-list > li:nth-child(3) .tit {
+    background: #4A5568;  /* 차분한 그레이 */
+}
+.techologie-list > li:nth-child(4) .tit {
+    background: #2C7A7B;  /* 깊은 청록색 */
+}
+
+
+#kribb-logo {
+    height: 40px;
+}
+
+#kaist-logo {
+    height: 40px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+/* 타임라인 스타일 */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #4CAF50;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    top: 45px;
+    z-index: 1;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right::after {
+    left: -8px;
+}
+
+.timeline-item.left::after {
+    right: -8px;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.year {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.event h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.event p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.timeline-image {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.timeline-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.timeline-image:hover img {
+    transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 반응형 스타일 */
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item.right {
+        left: 0;
+    }
+
+    .timeline-item.right::after,
+    .timeline-item.left::after {
+        left: 23px;
+    }
+}
+
+/* About 페이지 스타일 */
+.facility-intro {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.intro-title {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.intro-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.intro-text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.category-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.category-item {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.category-header {
+    margin-bottom: 1.5rem;
+}
+
+.category-number {
+    color: #4CAF50;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.category-title {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.category-content {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.info-list, .feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.info-list li, .feature-list li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.info-list li::before, .feature-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    width: 6px;
+    height: 6px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+    .category-section {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-content {
+        flex-direction: column;
+    }
+
+    .category-item {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Station 스타일 */
+.station-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.station-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.station-item:hover {
+    transform: translateY(-5px);
+}
+
+.station-header {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.station-header h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.station-content {
+    padding: 2rem;
+}
+
+.station-desc {
+    margin-bottom: 2rem;
+}
+
+.station-desc p {
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.station-functions h4 {
+    color: #4CAF50;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.station-functions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.station-functions li {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.8rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.station-functions li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    width: 6px;
+    height: 6px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+}
+
+/* 반응형 스타일 */
+@media screen and (max-width: 768px) {
+    .station-header h3 {
+        font-size: 1.75rem;
+    }
+
+    .station-desc {
+        font-size: 1.1rem;
+    }
+
+    .station-functions li {
+        font-size: 1rem;
+    }
+
+    .station-content {
+        padding: 1.5rem;
+    }
+}
+
+
