@@ -1,21 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <script>
-        // 브라우저 언어 설정 확인
-        var userLang = navigator.language || navigator.userLanguage;
-        // 한국어면 한국어 페이지로, 그 외는 영어 페이지로 리다이렉트
-        if (userLang.toLowerCase().startsWith('ko')) {
-            // window.location.href = '/docs/ko/index.html';
-            window.location.href = '/docs/en/index.html';
-        } else {
-            window.location.href = '/docs/en/index.html';
-        }
-    </script>
+<meta charset="utf-8" />
+<title>K-Biofoundry</title>
+<meta name="description" content="K-Biofoundry" />
+<meta name="copyright" content="K-Biofoundry" />
+<meta name="author" content="043-713-8000~5" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/general.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/content.css">
 </head>
 <body>
-    <p>Redirecting to the appropriate language version...</p>
+<div id="wrap">
+    <header id="header" class="wrap-con">
+        <!-- <h1 class="logo"><a href="index.html">K-BIOFOUNDRY</a></h1> -->
+        <div class="language-selector">
+            <!-- <a href="/docs/en/index.html" class="active">English</a> | <a href="/docs/ko/index.html">한국어</a> -->
+        </div>
+        <nav id="gnb-area">
+            <ul id="gnb">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="01_about.html">About</a></li>
+                <li><a href="02_history.html">History</a></li>
+                <li><a href="04_capability.html">Capabilities</a></li>
+                <!-- <li><a href="03_scope.html">Biofoundry-<i>beta</i></a></li> -->
+                <li><a href="">Biofoundry-<i>beta</i></a></li>
+                <!-- <li><a href="05_contact us.html">Contact us</a></li> -->
+                <li><a href="">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="body" class="visual01">
+        <div id="section-subject" class="wrap-con">
+            <h2 class="section-tit">Korea National Biofoundry</h2>
+            <p class="section-subtit"></p>
+        </div>
+
+        <div id="content" class="wrap-con">
+            <div class="tow-column">
+                <div class="txt-area01">
+                    <h3 class="subject">VISION</h3>
+                    <p class="desc">
+                        Our vision is to build a resilient, integrated biomanufacturing platform that empowers researchers across both public and private sectors. 
+                        <br>
+                        <br>
+                        By continuously advancing bio-manufacturing capabilities centered on the biofoundry model, we aim to drive transformative innovation and lead the evolution of the global bioeconomy.
+                    </p>
+                </div>
+                <div class="info-box">
+                    <div class="image-container">
+                        <img src="images/content/dbtl.png" alt="dbtl cycle"/>
+                    </div>
+                </div>
+            </div>
+            <div class="tow-column">
+                <div class="txt-area02">
+                    <h3 class="subject">MISSION</h3>
+                    <p class="desc">
+                        Our mission is to enhance the technological competitiveness of engineering biology and lay the foundation for accelerated biomanufacturing by establishing state-of-the-art biofoundry infrastructure.
+                    </p>
+                </div>
+                <div class="info-box-low">
+                    <div class="text-content">
+                        <ul>
+                            <li>AI driven experimental design</li>
+                            <li>Speed up DBTL cycle by automation</li>
+                            <li>High throughput technologies</li>
+                            <li>Facilitating the industrialization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer">
+        <footer class="wrap-con">
+            <span class="flogo">
+                <a href="https://portal.kribb.re.kr/kps" target="_blank">
+                <img src="images/layout/kribb.png" alt="kribb" id="kribb-logo"></a> 
+                <a href="https://www.kaist.ac.kr/html/en/index.html" target="_blank">
+                    <img src="images/layout/kaist.png" alt="KAIST" id="kaist-logo"/>
+                </a></span>
+
+            <span class="flogo">
+                <a href="https://portal.kribb.re.kr/kps" target="_blank">
+                <img src="images/layout/msict.jpg" alt="kribb" id="kribb-logo"></a> &nbsp; &nbsp;
+                <a href="https://www.kaist.ac.kr/html/en/index.html" target="_blank">
+                    <img src="images/layout/mtie.png" alt="KAIST" id="kaist-logo"/>
+                </a></span>
+
+            <span class="copyright">COPYRIGHT(c) Korea National Biofoundry ALL RIGHTS RESERVED.</span>
+        </footer>
+    </div>
+</div>
+<script>
+window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) {
+        header.classList.add('header-scrolled');
+    } else {
+        header.classList.remove('header-scrolled');
+    }
+});
+</script>
 </body>
-</html>
+</html> 
